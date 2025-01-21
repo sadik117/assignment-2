@@ -121,7 +121,7 @@
   }
   .banner-content {
     text-align: center;
-    margin: 0px 0px 0px -60px;
+    margin: 0px 0px 0px -30px;
   }
   .banner-content h2 {
     font-size: 1.7rem;
@@ -221,6 +221,10 @@
     padding: 5px;
     font-size: 1.5rem;
     font-weight: 500;
+    text-decoration: none;
+}
+.arrow:hover{
+  background-color: greenyellow;
 }
 
 @media screen and (max-width:576px) {
@@ -239,9 +243,8 @@
         margin-left: 1rem;
         margin-top: 1.5rem;     
     }
-    .frst-content h1{
-        font-size: 1.4rem;
-        margin-left: -6rem;
+    .card-1, .card-2, .card-3{
+      width: 95%;
     }
 }
 /* Second section */
@@ -257,7 +260,7 @@
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 60px;
-  margin-left: -380px;
+  margin-left: -250px;
 }
 .single-card img{
   width: 410px;
@@ -358,7 +361,7 @@
   margin-left: 400px;
   font-size: 1rem;
 }
-
+/* Small Device */
 @media screen and (max-width:576px) {
   .second-section{
     width: auto;
@@ -370,7 +373,7 @@
      .scnd-content h1{
       font-size: 1.5rem;
       font-weight: 800;
-      padding-left: 200px;
+      padding-left: 110px;
       padding-top: 100px;
     }
     .grid-cards{
@@ -386,6 +389,21 @@
       margin-left: -30px;  
       margin-bottom: 20px;
     }
+}
+/* Medium Device */
+@media  screen and (min-width:576px) and (max-width:992px) {
+  .single-card{
+    display: none;
+   }
+  .grid-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin: 25px 0px 0px 140px; 
+  }
+  .thrd-card,.frth-card{
+    margin-top: 0px;
+  }
 }
 
 /* Footer */
