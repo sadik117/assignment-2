@@ -154,7 +154,7 @@
   font-size: .85rem;
 }
 .card-1 {
-  width: 300px;
+  width: 350px;
   height: 320px;
   box-sizing: border-box;
   border: 0.94px solid rgb(222, 245, 255);
@@ -168,7 +168,7 @@
       rgb(255, 255, 255);
 }
 .card-2 {
-  width: 300px;
+  width: 350px;
   height: 320px;
   box-sizing: border-box;
   border: 0.94px solid rgb(255, 244, 220);
@@ -182,7 +182,7 @@
       rgb(255, 255, 255);
 }
 .card-3 {
-  width: 300px;
+  width: 350px;
   height: 320px;
   box-sizing: border-box;
   border: 0.94px solid rgb(242, 232, 255);
@@ -241,5 +241,147 @@
     .frst-content h1{
         font-size: 1.4rem;
         margin-left: -6rem;
+    }
+}
+/* Second section */
+
+.second-section{
+  width: 1250px;
+  height: 750px;
+  background: url("assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  padding-left: 150px;
+}
+.scnd-content h1{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  margin-left: -380px;
+}
+.single-card img{
+  width: 410px;
+  height: 320px;
+  border-radius: 15px 15px 0px 0px;
+}
+.scard-btn{
+  width: 140px;
+  height: 35px;
+  border: none;
+  border-radius: 45px;
+  color: white;
+  background: rgb(60, 216, 232);
+  top: -200px; 
+  position: relative;
+  margin-left: 10px;
+}
+.single-card-content{
+     width: 410px;
+     height: 210px;
+     border-radius: 0px 0px 15px 15px;
+     background: rgb(255, 255, 255);
+     top: -60px;
+     position: relative;
+}
+.single-card-content p{
+  font-size: .75rem;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+  padding: 0px 10px 5px 20px; ;
+}
+.single-card-content h5{
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 50px 10px 5px 20px; ;
+}
+.cards{
+  display: flex;
+}
+.grid-cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  margin: 25px 0px 0px 60px;
+}
+.grid-cards img{
+  width: 200px;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+.card-content{
+  width: 200px;
+  height: 70px;
+  border-radius:0px 0px 15px 15px;
+  background: rgb(255, 255, 255);
+  top: -40px;
+  position: relative;
+}
+.gcard-btn{
+  width: 130px;
+  height: 25px;
+  border: none;
+  border-radius: 45px;
+  color: white;
+  background: rgb(149, 178, 38);
+  top: -107px; 
+  position: relative;
+  margin-left: 17px;
+}
+.gcard-btn2{
+  width: 130px;
+  height: 25px;
+  border: none;
+  border-radius: 45px;
+  color: white;
+  background: rgb(93, 88, 240);
+  top: -107px; 
+  position: relative;
+  margin-left: 17px;
+}
+.card-content h5{
+  font-size: .85rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.thrd-card,.frth-card{
+  margin-top: -110px;
+}
+.section-btn{
+  width: 165px;
+  height: 45px;
+  border-radius: 11px;
+  background: rgb(17, 17, 17);
+  color: white;
+  margin-top: -450px;
+  margin-left: 400px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:576px) {
+  .second-section{
+    width: auto;
+    height: auto;
+  }   
+  .single-card{
+      display: none;
+     }
+     .scnd-content h1{
+      font-size: 1.5rem;
+      font-weight: 800;
+      padding-left: 200px;
+      padding-top: 100px;
+    }
+    .grid-cards{
+      display: grid;
+      grid-template-columns: repeat(2,0fr);
+      gap: 5px;
+      margin: 25px 0px 0px -150px;
+    }
+    .thrd-card,.frth-card{
+      margin-top: -30px;
+    }
+    .section-btn{
+      margin-left: -30px;  
     }
 }
